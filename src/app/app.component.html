@@ -1,0 +1,32 @@
+<!--
+============================================
+; Title: Assignment 5.4
+; Author: Professor Krasso
+; Date: 05 September 2021
+; Modified By: Angela Martin
+; Description: This program demonstrates the
+; use of Angular.
+;===========================================
+-->
+
+<!-- Navbar -->
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row>
+
+    <div style="width: 100%">
+      <div fxLayout="row" fxLayoutAlign="space-between">
+          <div fxFlex="50%"><button  mat-button routerLink="/home">Home</button></div>
+          <div class="headline"><h1>Bob's Computer Repair Shop</h1></div>
+
+          <div class="right" fxFlex="50%"><button mat-button routerLink="/place-order">Place an Order</button></div>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br />
+
+<!-- Main container-->
+<div class="main-container">
+  <router-outlet></router-outlet>
+</div>
